@@ -1,4 +1,4 @@
-const Pool = require('pg').Pool;
+const { Pool } = require('pg')
 const pool = new Pool({
   user: 'me',
   host: 'localhost',
@@ -6,3 +6,7 @@ const pool = new Pool({
   password: 'password',
   port: 5432,
 });
+
+module.exports = {
+  query: (text, params) => pool.query(text, params),
+};
