@@ -1,6 +1,6 @@
 import React from 'react';
-import { Flex, Text, Link, Stack } from '@chakra-ui/react';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import { Flex, Text, Link } from '@chakra-ui/react';
+import { ColorModeSwitcher } from '../utils/ColorModeSwitcher';
 
 function Post() {
   return (
