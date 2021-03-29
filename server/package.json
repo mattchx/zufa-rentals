@@ -5,7 +5,8 @@
   "author": "MCH",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "testdb": "nodemon db/index.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
