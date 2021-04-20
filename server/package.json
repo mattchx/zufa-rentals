@@ -5,10 +5,14 @@
   "author": "MCH",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js"
+    "start": "nodemon app.js",
+    "testdb": "nodemon db/index.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "pg": "^8.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

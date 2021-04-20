@@ -1,11 +1,17 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const mountRoutes = require('./routes')
+
+const app = express();
+
+require('dotenv').config()
+
 const port = process.env.PORT || 8080; 
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }))
 
+mountRoutes(app)
+// **** APP listener ****
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Nodejs server running on port ${port}.`);
+});
