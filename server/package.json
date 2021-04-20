@@ -5,7 +5,7 @@
   "author": "MCH",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js",
+    "start": "nodemon app.js",
     "testdb": "nodemon db/index.js"
   },
   "dependencies": {
