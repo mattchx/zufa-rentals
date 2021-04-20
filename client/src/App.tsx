@@ -1,7 +1,12 @@
+import React from 'react';
 import Post from './pages/Post';
 
-export const App = () => (
-  <ChakraProvider theme={theme}>
-    <Post />
-  </ChakraProvider>
-);
+const App = () => {
+  return (
+    <div>
+      <Post />
+    </div>
+  );
+};
+
+export default App;
