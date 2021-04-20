@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled'
+import house from '../assets/small-one-storey-house-medium.jpeg';
 
 
 const Post = () => {
   return (
       <>
     <h2>Zufa Rentals</h2>
-    <img width='44' alt='house' src="../assets/small-one-storey-house-medium.jpeg"/>
+    <Img width="100%" alt='house' src={house}/>
     </>
   );
 }
