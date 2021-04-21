@@ -5,7 +5,6 @@ import house from '../assets/small-one-storey-house-medium.jpeg';
 const Post:React.FC = () => {
   return (
     <>
-      <Nav>ZufaApp</Nav>
       <Stack>
         <h1>North Naples Hideaway</h1>
         <h3>$200 USD / night</h3>
@@ -47,15 +46,7 @@ export default Post;
 const boxShadow = `0px 10px 15px -3px rgba(0, 0, 0, 0.1),
 0px 4px 6px -2px rgba(0, 0, 0, 0.05);`
 
-const Nav = styled.div`
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: #232323;
-  color: #ccc;
-`;
+
 
 const Stack = styled.div`
   padding: 6rem;
