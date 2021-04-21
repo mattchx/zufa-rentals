@@ -33,7 +33,9 @@ const Post:React.FC = () => {
           </p>
         </Section>
         <Section>
-        <h3>Contact</h3>
+        <h3>Contact Owner</h3>
+        Email: salsa@spicy.com
+        Phone: 324-234-4444
         </Section>
       </Stack>
     </>
