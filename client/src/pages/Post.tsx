@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import house from '../assets/small-one-storey-house-medium.jpeg';
 
-const Post = () => {
+const Post:React.FC = () => {
   return (
     <>
       <Nav>ZufaApp</Nav>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from './pages/Post';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div>
       <Post />
