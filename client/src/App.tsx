@@ -1,3 +1,4 @@
+
 //import * as React from "react"
 import React from "react";
 import {
@@ -7,9 +8,9 @@ import {
   Link
 } from "react-router-dom";
 
-import Home from "./pages/Home"
+import Post from "./pages/Post"
 
-export default function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <div>
@@ -44,7 +45,7 @@ export default function App() {
     </Router>
   );
 }
-
+export default App;
 
 function About() {
   return <h2>About</h2>;
@@ -53,3 +54,4 @@ function About() {
 function Users() {
   return <h2>Users</h2>;
 }
+
