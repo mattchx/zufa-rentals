@@ -20,10 +20,10 @@ const App: React.FC = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/property">Property</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/submit-new-property">Submit New</Link>
             </li>
           </ul>
         </nav>
@@ -31,15 +31,10 @@ const App: React.FC = () => {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/property" component={Post}/>
+          {/* <Route path="/submit-new-property"> */}
+          <Route path="/submit-new-property" component={Home}/>
+          <Route path="/" component={Home}/>
         </Switch>
       </div>
     </Router>
@@ -47,11 +42,6 @@ const App: React.FC = () => {
 }
 export default App;
 
-function About() {
-  return <h2>About</h2>;
+function Home() {
+  return <h2>Welcome to Zu Rentals</h2>;
 }
-
-function Users() {
-  return <h2>Users</h2>;
-}
-
